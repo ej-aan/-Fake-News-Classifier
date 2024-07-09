@@ -36,8 +36,8 @@ st.title('📰 Fake News Classifier')
 st.write('Enter the news text below to classify it as Real or Fake.')
 
 # Add a sidebar for user input
-st.sidebar.header('Input Options')
-st.sidebar.write('You can paste the news text into the input box below.')
+st.sidebar.header('Welcome!')
+st.sidebar.write('You can paste the news text into the input box and try whether the news is Real or Fake.')
 
 # Add an expander for instructions
 with st.expander("See Instructions"):
@@ -48,7 +48,7 @@ with st.expander("See Instructions"):
     """)
 
 # Text input
-user_input = st.text_area('News Text', height=200)
+user_input = st.text_area('Input The News Text', height=200)
 
 if st.button('Classify'):
     if user_input.strip() == "":
